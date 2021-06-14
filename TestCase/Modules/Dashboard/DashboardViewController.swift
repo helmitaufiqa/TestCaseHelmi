@@ -35,10 +35,10 @@ class DashboardViewController: UIViewController {
         pageController.pageIndicatorTintColor = .lightGray
         DispatchQueue.main.async {
             self.timer = Timer.scheduledTimer(timeInterval: 3.0,
-                                         target: self,
-                                         selector: #selector(self.changePagesHandler),
-                                         userInfo: nil,
-                                         repeats: true )
+                                              target: self,
+                                              selector: #selector(self.changePagesHandler),
+                                              userInfo: nil,
+                                              repeats: true )
         }
     }
     
@@ -65,34 +65,46 @@ class DashboardViewController: UIViewController {
     // MARK: - CHANGE CAROUSEL PAGES AUTOMATICALLY SETUP
     @objc
     private func changePagesHandler() {
-        if counter < carouselModel.count {
-            let index = IndexPath.init(item: counter, section: 0)
-            collectionView.scrollToItem(at: index,
-                                        at: .centeredHorizontally,
-                                        animated: true)
-            pageController.currentPage = counter
-            counter += 1
-        } else {
-            counter = 0
-            let index = IndexPath.init(item: counter, section: 0)
-            collectionView.scrollToItem(at: index,
-                                        at: .centeredHorizontally,
-                                        animated: false)
-            pageController.currentPage = counter
-            counter = 1
-        }
+        UIView.transition(
+            with: collectionView,
+            duration: 0.4,
+            options: .transitionCrossDissolve,
+            animations: {
+                if self.counter < self.carouselModel.count {
+                    let index = IndexPath.init(item: self.counter, section: 0)
+                    self.collectionView.scrollToItem(at: index,
+                                                at: .centeredHorizontally,
+                                                animated: true)
+                    self.pageController.currentPage = self.counter
+                    self.counter += 1
+                } else {
+                    self.counter = 0
+                    let index = IndexPath.init(item: self.counter, section: 0)
+                    self.collectionView.scrollToItem(at: index,
+                                                at: .centeredHorizontally,
+                                                animated: false)
+                    self.pageController.currentPage = self.counter
+                    self.counter = 1
+                }
+            }
+        )
     }
     
     // MARK: - ACTION SELECTOR TOGGLE SETUP
     @objc
     private func hideSection(sender: UIButton) {
-        UIView.animate(withDuration: 0.3) {
-            let section = sender.tag
-            
-            self.sectionModel[section].isCollapsed = !self.sectionModel[section].isCollapsed
-            
-            self.tableView.reloadData()
-        }
+        UIView.transition(
+            with: tableView,
+            duration: 0.4,
+            options: .transitionCrossDissolve,
+            animations: {
+                let section = sender.tag
+                
+                self.sectionModel[section].isCollapsed = !self.sectionModel[section].isCollapsed
+                
+                self.tableView.reloadData()
+            }
+        )
     }
 }
 
