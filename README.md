@@ -1,3 +1,3 @@
 Test Case Helmi Taufiq Alhakim
 ==============================
-![](TestCaseHelmi/TestCase/Resources/Media/Demo.mov)
+![](https://github.com/helmitaufiqa/TestCaseHelmi/tree/master/TestCase/Resources/Media/Screenshoot.png)
