@@ -22,6 +22,8 @@
 		D338E535267710420041EF5F /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338E534267710420041EF5F /* CarouselModel.swift */; };
 		D338E5392677115A0041EF5F /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338E5372677115A0041EF5F /* CarouselCollectionViewCell.swift */; };
 		D338E53A2677115A0041EF5F /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D338E5382677115A0041EF5F /* CarouselCollectionViewCell.xib */; };
+		D38F27E2267B062400AE8641 /* Demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = D38F27E0267B062400AE8641 /* Demo.mov */; };
+		D38F27E3267B062400AE8641 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = D38F27E1267B062400AE8641 /* Screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		D338E534267710420041EF5F /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
 		D338E5372677115A0041EF5F /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		D338E5382677115A0041EF5F /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		D38F27E0267B062400AE8641 /* Demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Demo.mov; sourceTree = "<group>"; };
+		D38F27E1267B062400AE8641 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +99,10 @@
 		D32FE5D22676003D008497BB /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				D38F27DD267B053E00AE8641 /* Application */,
+				D38F27DB267B052F00AE8641 /* Resources */,
 				D32FE5EB267600A0008497BB /* Components */,
 				D32FE5E82676005B008497BB /* Modules */,
-				D32FE5D32676003D008497BB /* AppDelegate.swift */,
-				D32FE5D52676003D008497BB /* SceneDelegate.swift */,
-				D32FE5DC2676003F008497BB /* Assets.xcassets */,
-				D32FE5DE2676003F008497BB /* LaunchScreen.storyboard */,
 				D32FE5E12676003F008497BB /* Info.plist */,
 			);
 			path = TestCase;
@@ -140,6 +142,34 @@
 				D338E5382677115A0041EF5F /* CarouselCollectionViewCell.xib */,
 			);
 			path = Carousel;
+			sourceTree = "<group>";
+		};
+		D38F27DB267B052F00AE8641 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D38F27DE267B054E00AE8641 /* Media */,
+				D32FE5DC2676003F008497BB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D38F27DD267B053E00AE8641 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D32FE5D32676003D008497BB /* AppDelegate.swift */,
+				D32FE5D52676003D008497BB /* SceneDelegate.swift */,
+				D32FE5DE2676003F008497BB /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D38F27DE267B054E00AE8641 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				D38F27E0267B062400AE8641 /* Demo.mov */,
+				D38F27E1267B062400AE8641 /* Screenshot.png */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +234,9 @@
 				D338E53A2677115A0041EF5F /* CarouselCollectionViewCell.xib in Resources */,
 				D32FE5DD2676003F008497BB /* Assets.xcassets in Resources */,
 				D32EF1BD2676241400B78040 /* TimelineItemTableViewCell.xib in Resources */,
+				D38F27E2267B062400AE8641 /* Demo.mov in Resources */,
 				D32FE5F12676010F008497BB /* DashboardViewController.xib in Resources */,
+				D38F27E3267B062400AE8641 /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
