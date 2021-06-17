@@ -1,3 +1,3 @@
 Test Case Helmi Taufiq Alhakim
 ==============================
-![](TestCase/Resources/Media/Screenshot.png)
+![](TestCase/Resources/Media/Demo.mov)
