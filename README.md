@@ -6,8 +6,8 @@ To create a Carousel I use a CollectionView with a horizontal scroll orientation
 
 Herewith I attach a screenshot of the application and the demo video:
 
-## Application Screenshot
+## Screenshot of the Application
 ![Screenshot](https://user-images.githubusercontent.com/51486163/122332172-305ad000-cf60-11eb-9aeb-fcbb34911c55.png)
 
-## Application Demo Video
+## Demo Video
 https://user-images.githubusercontent.com/51486163/122332218-42d50980-cf60-11eb-88fe-6cd0fdf51334.mov
